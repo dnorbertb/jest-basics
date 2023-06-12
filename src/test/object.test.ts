@@ -7,7 +7,7 @@ describe('Object tests', () => {
     });
 
     /**
-     * Test belov will fail because in js {} === {} => false
+     * Test below will fail because in js {} === {} => false
      *  it('Compares returned object', () => {
      *   expect(objectFunc()).toEqual({ success: true });
      *  });

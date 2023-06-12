@@ -1,7 +1,7 @@
 import { fetchFunction, promiseResolveFunc, promiseRejectFunc } from "../utils/promise"
 
 describe('Promises tests', () => {
-    it('Checks if right data returned from promise', async () => {
+    it('Checks if right data is returned from promise', async () => {
         const toDoId = 1;
         jest.spyOn(global, 'fetch').mockReturnValue(fetchMockFunction);
         const result = await fetchFunction(toDoId);
@@ -22,4 +22,4 @@ const fetchMockFunction = Promise.resolve({
     ok: true,
     status: 200,
     json: async () => ({ id: 1, data: "I'm mocked data" }),
-} as Response)
+} as Response);
